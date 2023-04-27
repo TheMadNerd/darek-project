@@ -1,0 +1,92 @@
+.box {
+ 
+ 
+  display: inline-block;
+  margin: 15px;
+  width: 31%;
+  
+  min-height: 10vh;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 64px;
+  width: 90%;
+  margin: auto;
+  
+  
+ 
+}
+
+.articleImg{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.text {
+ padding: 10px;
+ margin-bottom: 5px;
+ color: #1a1c2e;
+}
+
+ .title{
+  font-size: 25px;
+  height: 20%;
+  padding: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+ .content {
+  margin: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+  height: 25%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.more {
+  text-align: center;
+  background-color: rgb(117, 207, 237);
+  color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ font-size: 1.5vw;
+}
+.box:hover .more{
+  background-color: rgb(97, 172, 197);
+  transition: 0.5s;
+}
+
+.img {
+  height: 50%;
+}
+
+.menu {
+  background-color: rgb(97, 172, 197);
+  color: white;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  height: 5%;
+  border-bottom: 3px solid #1a1c2e;
+}
