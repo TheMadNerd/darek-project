@@ -1,0 +1,47 @@
+.head {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    color: #1a1c2e;
+    background-color: #1a1c2e;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+   
+    
+    
+    
+}
+
+.articleTitle {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(117, 207, 237);
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.article {
+    width: 65%;
+    margin: auto;
+}
+
+.photo {
+    width: 100%;
+    
+}
+
+.summary {
+    
+    background-color: rgb(117, 207, 237);
+    
+}
+
+.footer {
+    background-color: rgb(97, 172, 197); 
+    font-weight: lighter;
+}
