@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import './Article.css'
+
 
 function Article(props) {
 	const [articles, setArticles] = React.useState([])
@@ -26,20 +26,20 @@ function Article(props) {
 	const formattedDate = `${year}-${month}-${day}`
 
 	return (
-		<div className="article">
-			<div className="head">
-				<div className="articleTitle">{articles.title}</div>
-				<img className="photo" src={articles.imageUrl} alt="imageArticle"></img>
-				<div className="summary">{articles.summary}</div>
-
-				<div className="footer">
-					Published by: {articles.newsSite} at {formattedDate}
-					<div>
-						Link to original website: <Link to={articles.url}>{articles.newsSite}</Link>
-					</div>
-				</div>
-			</div>
-		</div>
+		
+		
+<div className="card flex-column d-flex align-items-stretch">
+<img src={articles.imageUrl} className="card-img-top mx-auto img-fluid" alt="articleImage" style={{width: "100%", height: "30vw", objectFit: "cover"}}></img>
+<div className="card-body h-100">
+  <h5 className="card-title">{articles.title}</h5>
+  <p className="card-text">{articles.summary}</p>
+</div>
+<ul className="list-group list-group-flush">
+  <li className="list-group-item">Published by: <span style={{fontWeight: "bold"}}>{articles.newsSite}</span></li>
+  <li className="list-group-item">Date of publish: <span style={{fontWeight: "bold"}}>{formattedDate}</span></li>
+  <li className="list-group-item">Link to original website: <span style={{fontWeight: "bold"}}><Link to={articles.url}>{articles.newsSite}</Link></span></li>
+</ul>
+</div>
 	)
 }
 
