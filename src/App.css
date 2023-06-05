@@ -1,92 +1,85 @@
-.box {
- 
- 
-  display: inline-block;
-  margin: 15px;
-  width: 31%;
-  
-  min-height: 10vh;
-  border-radius: 25px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
-  
+.shape-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 64px;
-  width: 90%;
-  margin: auto;
-  
-  
- 
+.shape {
+  pointer-events: none;
+  position: absolute;
 }
 
-.articleImg{
+.text-white {
+  color: var(--bs-white)!important;
+}
+
+.shape-fluid-x {
+  height: auto;
   width: 100%;
-  height: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
-.text {
- padding: 10px;
- margin-bottom: 5px;
- color: #1a1c2e;
+.img-top {
+  min-height: 1px;
+  position: relative;
 }
 
- .title{
-  font-size: 25px;
-  height: 20%;
-  padding: 10px;
-  text-align: center;
-  font-weight: bolder;
+.position-relative {
+  position: relative!important;
+}
+.card-meta {
+  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px 15px 15px;
 }
 
- .content {
+.mt-auto {
+  margin-top: auto!important;
+}
+    
+.card-meta-divider {
   margin: 10px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
-  white-space: pre-wrap; /* let the text wrap preserving spaces */
-  height: 25%;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.more {
-  text-align: center;
-  background-color: rgb(117, 207, 237);
-  color: white;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
- position: absolute;
- bottom: 0;
- width: 100%;
- font-size: 1.5vw;
-}
-.box:hover .more{
-  background-color: rgb(97, 172, 197);
-  transition: 0.5s;
-}
-
-.img {
-  height: 50%;
-}
-
-.menu {
-  background-color: rgb(97, 172, 197);
-  color: white;
-  position: fixed;
   width: 100%;
-  text-align: center;
-  z-index: 1;
-  height: 5%;
-  border-bottom: 3px solid #1a1c2e;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid;
+  color: var(--bs-border-color);
+  margin: 1rem 0;
+  opacity: 1;
+}
+
+
+
+.my-card:hover {
+  box-shadow: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05)!important;
+    transform: translate3d(0,-5px,0);
+}
+
+.shadow-light-lg {
+  box-shadow: 0 1.5rem 4rem rgba(22,28,45,.05)!important;
+}
+
+.lift {
+  box-shadow: 0 0 0 rgba(22,28,45,0);
+  transition: box-shadow .25s ease,transform .25s ease;
+}
+
+.my-navbar {
+  border-bottom: 5px solid purple;
+}
+
+.lift-lg:focus, .lift-lg:hover {
+  box-shadow: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05)!important;
+  transform: translate3d(0,-5px,0);
+}
+
+.my-button {
+  
+  border: none;
+  background: none;
+  font-weight: bold;
+  font-size: 20px;
+  
 }

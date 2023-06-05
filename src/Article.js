@@ -6,13 +6,10 @@ import { Link } from 'react-router-dom'
 function Article(props) {
 	const [articles, setArticles] = React.useState([])
 
-	const url = window.location.href
-	const parts = url.split('/')
-	const lastPart = parts.pop()
-	console.log(lastPart)
+	console.log(props.id);
 
 	useEffect(() => {
-		fetch(`https://api.spaceflightnewsapi.net/v3/articles/${lastPart}`)
+		fetch(`https://api.spaceflightnewsapi.net/v3/articles/${props.id}`)
 			.then(res => res.json())
 			.then(article => setArticles(article))
 			.catch(err => console.log(`błąd ${err}`))
