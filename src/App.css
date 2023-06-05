@@ -1,85 +1,82 @@
 .shape-bottom {
-  bottom: 0;
-  left: 0;
-  right: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .shape {
-  pointer-events: none;
-  position: absolute;
+	pointer-events: none;
+	position: absolute;
 }
 
 .text-white {
-  color: var(--bs-white)!important;
+	color: var(--bs-white) !important;
 }
 
 .shape-fluid-x {
-  height: auto;
-  width: 100%;
+	height: auto;
+	width: 100%;
 }
 
 .img-top {
-  min-height: 1px;
-  position: relative;
+	min-height: 1px;
+	position: relative;
 }
 
 .position-relative {
-  position: relative!important;
+	position: relative !important;
 }
 .card-meta {
-  align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 15px 15px 15px;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 15px 15px 15px;
 }
 
 .mt-auto {
-  margin-top: auto!important;
+	margin-top: auto !important;
 }
-    
+
 .card-meta-divider {
-  margin: 10px;
-  width: 100%;
+	margin: 10px;
+	width: 100%;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid;
-  color: var(--bs-border-color);
-  margin: 1rem 0;
-  opacity: 1;
+	border: 0;
+	border-top: 1px solid;
+	color: var(--bs-border-color);
+	margin: 1rem 0;
+	opacity: 1;
 }
 
-
-
 .my-card:hover {
-  box-shadow: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05)!important;
-    transform: translate3d(0,-5px,0);
+	box-shadow: 0 2rem 5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05) !important;
+	transform: translate3d(0, -5px, 0);
 }
 
 .shadow-light-lg {
-  box-shadow: 0 1.5rem 4rem rgba(22,28,45,.05)!important;
+	box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
 }
 
 .lift {
-  box-shadow: 0 0 0 rgba(22,28,45,0);
-  transition: box-shadow .25s ease,transform .25s ease;
+	box-shadow: 0 0 0 rgba(22, 28, 45, 0);
+	transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .my-navbar {
-  border-bottom: 5px solid purple;
+	border-bottom: 5px solid purple;
 }
 
-.lift-lg:focus, .lift-lg:hover {
-  box-shadow: 0 2rem 5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.05)!important;
-  transform: translate3d(0,-5px,0);
+.lift-lg:focus,
+.lift-lg:hover {
+	box-shadow: 0 2rem 5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05) !important;
+	transform: translate3d(0, -5px, 0);
 }
 
 .my-button {
-  
-  border: none;
-  background: none;
-  font-weight: bold;
-  font-size: 20px;
-  
+	border: none;
+	background: none;
+	font-weight: bold;
+	font-size: 20px;
 }
