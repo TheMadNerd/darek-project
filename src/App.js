@@ -18,9 +18,9 @@ function App() {
 			.then(articles =>
 				setArticle(
 					articles.map(article => (
-						<div className="col-lg-3 flex-column d-flex align-items-stretch">
+						<div className=" col-lg-3 col-md-6 col-sm-12 flex-column d-flex align-items-stretch">
 							<NavLink
-								className="lift lift-lg shadow-light-lg card h-100 card-spacer-y: 5px"
+								className="media lift lift-lg shadow-light-lg card h-100 card-spacer-y: 5px"
 								key={article.id}
 								to={`/article/${article.id}`}
 								onClick={() => navLinkHandler(article.id)}
@@ -33,7 +33,7 @@ function App() {
 										style={{ width: '100%', height: '15vw', objectFit: 'cover' }}></img>
 
 									<div className="position-relative">
-										<div className="shape shape-bottom shape-fluid-x text-white">
+										<div className="svg-curve shape shape-bottom shape-fluid-x text-white">
 											<svg viewBox="0 0 2100 480" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path
 													fillRule="evenodd"
